@@ -1,0 +1,19 @@
+
+html, body {
+  background: #444;
+  color: #fff;
+}
+
+.navbar {
+  background: #1206d8;
+}
+
+.whoare {
+  background: #232323;
+}
+
+.margin {
+  /* .margin para alterar o padding ;-;  serio? */
+  padding-top: 30px;
+}
+
