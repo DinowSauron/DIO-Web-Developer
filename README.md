@@ -27,4 +27,5 @@ Note que eu já possuio um grande conhecimento em programação e essa é minhas
   * Por que ensinar a utilizar framework antes de aprender css? ou javascript?
   * Ensinar SCRUM logo de inicio? não é um pouco avançado? não poderia ter colocado no final?
 2. Muita teoria e pouca pratica, para ter ideia a aula de apenas teorias tem 15hrs quando a de javascript tem 10hrs e ja começa Coleções, Error Handling e async await? que?
-3. 
+3. React:
+  * Bastante pratica, algo bom...
