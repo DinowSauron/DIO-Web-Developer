@@ -2,17 +2,17 @@ import React from "react"
 import { connect } from "react-redux"
 
 
-function Counter(props) {
+function Counter({count, dispatch}) {
   
   // Qual diferença entre utilizar isso e o useState?
 
   const increment = () => {
-    props.dispatch({ type: "INCREMENT"})
+    dispatch({ type: "INCREMENT"})
     console.log("incremented")
   }
 
   const decrement = () => {
-    props.dispatch({ type: "DECREMENT"})
+    dispatch({ type: "DECREMENT"})
     console.log("decremented")
   }
 
@@ -20,7 +20,7 @@ function Counter(props) {
     <div style={{width: 'fit-content', margin: 'auto'}}>
       <h1 style={{width: 'fit-content', margin: 0}}>Counter</h1>
       <button onClick={decrement}>-</button>
-      <h2 style={{display: 'inline'}} id="counter">{props.count}</h2>
+      <h2 style={{display: 'inline'}} id="counter">{count}</h2>
       <button onClick={increment}>+</button>
     </div>
   );

@@ -1,18 +1,25 @@
+// a função gets é implementada dentro do sistema para ler as entradas(inputs) dos dados
+// Abaixo segue um exemplo de código que você pode ou não utilizar
 
-let totalDeDias = parseInt(-500);
+let totalItems = parseInt(10);
+let pares = [];
+let impares = [];
 
-let qtdAnos, qtdMeses;
-totalDeDias < 0 ? totalDeDias = 0 : ''
+for (let i = 0; i < totalItems; i++) {
+  let number = parseInt(5);
+  if (number % 2 === 0){
+    pares.push(number);
+  }
+  else {
+    impares.push(number);
+  }
+}
+pares.sort((a, b) =>    a+b   );
+impares.sort((a, b) =>   a+b     );
 
-qtdAnos = parseInt(totalDeDias/365);
-totalDeDias= totalDeDias - (365 * qtdAnos);
-
-
-qtdMeses= parseInt(totalDeDias/30);
-totalDeDias= parseInt(totalDeDias - (30 * qtdMeses));
-
-let resultado = (qtdAnos + " ano(s) " + '\n' + 
-qtdMeses +" mes(es)" + '\n' +
-totalDeDias + " dia(s)");
-
-console.log(resultado);
+for(let i = 0; i < pares.length;i++){
+  console.log(    pares[i]    )
+}
+for(let i = 0; i < impares.length;i++){
+  console.log(     impares[i]     )
+}
